@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <div data-include-path="head.html"></div>
+
+</head>
+
+<body>
+
+    <div class="cursor"></div>
+
+    <!-- Main Navigation 
+    ================================================== -->
+    <div data-include-path="nav.html"></div>
+
+    <p class="button-up"><a href="#tf-home" class="scroll">▲</a></p>
+
+    <!-- Slide
+    ================================================== -->
+    <div id="tf-home" class="slider">
+        <div class="overlay">
+            <!-- Overlay Color -->
+            <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="/img/bg/slide1.jpg" alt="...">
+                        <div class="carousel-caption">
+                            <div class="content-heading text-center">
+                                <!-- Input Your Home Content Here -->
+                                <h1 class="text-light-yellow no-hover">베이징 동계올림픽</h1>
+                                <p class="lead">2022년 2월 4일 ~ 2월 20일</p>
+                                <a href="#tf-services" class="scroll goto-btn text-uppercase">작년 트렌드 보러가기</a>
+                                <!-- Link to your portfolio section -->
+                            </div><!-- End Input Your Home Content Here -->
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="/img/bg/slide2.jpg" alt="...">
+                        <div class="carousel-caption">
+                            <div class="content-heading text-center">
+                                <!-- Input Your Home Content Here -->
+                                <h1>항저우 아시안게임</h1>
+                                <p class="lead">2022년 9월 10일 ~ 9월 25일</p>
+                                <a href="#tf-about" class="scroll goto-btn text-uppercase">작년 트렌드 보러가기</a>
+                                <!-- Link to your portfolio section -->
+                            </div><!-- End Input Your Home Content Here -->
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="/img/bg/slide3.jpg" alt="...">
+                        <div class="carousel-caption">
+                            <div class="content-heading text-center">
+                                <!-- Input Your Home Content Here -->
+                                <h1 class="text-light-yellow no-hover">카타르 월드컵</h1>
+                                <p class="lead">2022년 11월 21일 ~ 12월 18일</p>
+                                <a href="#tf-team" class="scroll goto-btn text-uppercase">작년 트렌드 보러가기</a>
+                                <!-- Link to your portfolio section -->
+                            </div><!-- End Input Your Home Content Here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Overlay Color -->
+    </div>
+
+
+    <!-- Service Section
+    ================================================== -->
+    <div id="tf-services">
+        <div class="container">
+            <!-- container -->
+
+            <div class="section-header">
+                <h2>Beijing <span class="highlight"><strong>Olympics</strong></span></h2>
+            </div>
+
+            <div class="row">
+                <!-- row -->
+                
+                <div class="sports-chart">
+                    <h3 class="text-center text-bold">국가별 메달합계 점유율</h3>
+                    <div id="o-1"></div>
+                </div>
+    
+                <div class="sports-chart">
+                    <h3 class="text-center text-bold">순위 높은 7개국의 메달 합계와 금메달 개수</h3>
+                    <div id="o-2"></div>
+                </div>
+    
+                <div class="sports-chart">
+                    <h3 class="text-center text-bold">대한민국의 종목별 참가선수 - 메달 합계 버블차트</h3>
+                    <div id="o-3"></div>
+                </div>
+    
+                <div class="sports-chart">
+                    <h3 class="text-center text-bold">대한민국 메달별, 종목별 메달 점유율</h3>
+                    <div id="o-4"></div>
+                </div>
+
+                <div class="pie-chart-wrap text-center">
+                    <canvas id="pie-chart" width="100" height="100"></canvas>
+                </div>
+
+            </div><!-- end row -->
+
+        </div><!-- end container -->
+    </div>
+
+    <!-- About Us Section
+    ================================================== -->
+    <div class="gray-bg" style="height: 600px;">
+        <!-- fullwidth gray background -->
+        <div id="tf-about">
+            <div class="container">
+                <!-- container -->
+                <div class="section-header">
+                    <h2>Asian <span class="highlight"><strong>Games</strong></span></h2>
+                </div>
+
+            </div><!-- end container -->
+
+            <h4 class="text-center text-bold m-bot-30">2018년 자카르타-팔렘방 아시안 게임</h4>
+            <div id="tf-counter" class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <!-- Row -->
+                        <div class="counter">
+
+                            <div class="col-xs-6 col-sm-4 col-md-2 col-md-2 col-md-offset-1 facts">
+                                <!-- counter #1 -->
+                                <div class="count-box">
+                                    <i class="fa fa-thumbs-up"></i>
+                                    <div class="count-c">
+                                        <h4 class="count fl ">45</h4> 
+                                        <h5 class="fl d-in">개</h5>
+                                    </div>
+                                    <p>참가국</p>
+                                </div>
+                            </div><!-- end counter #1 -->
+
+                            <div class="col-xs-6 col-sm-4 col-md-2 facts">
+                                <!-- counter #2 -->
+                                <div class="count-box">
+                                    <i class="fa fa-user"></i>
+                                    <h4 class="count">40</h4>
+                                    <p>종목 수</p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-4 col-md-2 facts">
+                                <!-- counter #3 -->
+                                <div class="count-box">
+                                    <i class="fa fa-desktop"></i>
+                                    <h4 class="count">809</h4>
+                                    <p>대한민국 선수단 규모</p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-4 col-md-2 facts">
+                                <!-- counter #4 -->
+                                <div class="count-box">
+                                    <i class="fa fa-dollar"></i>
+                                    <h4 class="count">177</h4>
+                                    <p>대한민국 메달 총합</p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-4 col-md-2 facts">
+                                <!-- counter #5 -->
+                                <div class="count-box last">
+                                    <i class="fa fa-line-chart"></i>
+                                    <h4 class="count">11720</h4>
+                                    <p>전체 참가 인원</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div> <!-- End Row -->
+                </div>
+            </div>
+
+        </div> <!-- end fullwidth gray background -->
+    </div>
+
+    <!-- Team Section
+    ================================================== -->
+    <div id="tf-team">
+        <div class="container">
+            <!-- container -->
+            <div class="section-header">
+                <h2>Fifa <span class="highlight"><strong>Worldcup</strong></span></h2>
+            </div>
+
+            <div class="sports-chart">
+                <h3 class="text-center text-bold">전체 월드컵 출전 횟수와 2018년 출전 - 산점도 그래프</h3>
+                <div id="w-1"></div>
+            </div>
+
+            <div class="sports-chart">
+                <h3 class="text-center text-bold">전체 월드컵 출전 횟수와 2018년 출전 - 로지스틱 회귀분석</h3>
+                <div id="w-2"></div>
+            </div>
+
+            <div class="sports-chart">
+                <h3 class="text-center text-bold"> 2018년 월드컵 순위 분포</h3>
+                <img src="/img/w-3.png" class="w900 m-left-50" alt="">
+            </div>
+
+            <div class="sports-chart">
+                <h3 class="text-center text-bold">2018년 대륙별 16강 진출율</h3>
+                <div id="w-4"></div>
+            </div>
+            
+
+        </div> <!-- container -->
+    </div>
+
+    <!-- Footer 
+    ================================================== -->
+    <div data-include-path="footer.html"></div>
+
+    <!-- <div data-include-path="script.html"></div> -->
+    <script>
+        window.addEventListener('load', function () {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function (el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        });
+    </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.1.11.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+    <script type="text/javascript" src="/js/owl.carousel.js"></script><!-- Owl Carousel Plugin -->
+
+    <script type="text/javascript" src="/js/SmoothScroll.js"></script>
+
+    <!-- Charts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    
+    <script type="text/javascript" src="/js/core.js"></script>
+    <script type="text/javascript" src="/js/charts.js"></script>
+    <script type="text/javascript" src="/js/animated.js"></script>
+
+    <script type="text/javascript" src="/js/pie-chart.js"></script>
+    <script type="text/javascript" src="/js/w-1.js"></script>
+    <script type="text/javascript" src="/js/w-2.js"></script>
+    <!-- <script type="text/javascript" src="/js/w-3.js"></script> -->
+    <script type="text/javascript" src="/js/w-4.js"></script>
+    <script type="text/javascript" src="/js/o-1.js"></script>
+    <script type="text/javascript" src="/js/o-2.js"></script>
+    <script type="text/javascript" src="/js/o-3.js"></script>
+    <script type="text/javascript" src="/js/o-4.js"></script>
+
+    <!-- Parallax Effects -->
+    <script type="text/javascript" src="/js/skrollr.js"></script>
+    <script type="text/javascript" src="/js/imagesloaded.js"></script>
+
+    <!-- Portfolio Filter -->
+    <!-- <script type="text/javascript" src="/js/jquery.isotope.js"></script> -->
+
+    <!-- LightBox Nivo -->
+    <script type="text/javascript" src="/js/nivo-lightbox.min.js"></script>
+
+    <!-- Contact page-->
+    <script type="text/javascript" src="/js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="/js/contact.js"></script>
+
+    <!-- Javascripts
+    ================================================== -->
+    <script type="text/javascript" src="/js/main.js"></script>
+
+    <script type="text/javascript" src="/js/modernizr.custom.js"></script>
+
+
+
+    <!-- cursor
+    ================================================== -->
+    <!-- <script>
+        let mouseCursor = document.querySelector(".cursor");
+        let navLinks = document.querySelectorAll(".navbar-right li a"); //메뉴 링크
+        //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
+        window.addEventListener("scroll", cursor);
+        window.addEventListener("mousemove", cursor);
+        //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
+        function cursor(e) {
+            mouseCursor.style.left = e.pageX + "px";
+            mouseCursor.style.top = e.pageY - scrollY + "px";
+        }
+
+        navLinks.forEach((link) => {
+            link.addEventListener("mouseover", () => {
+            mouseCursor.classList.add("link-grow");
+            mouseCursor.style.zIndex = "-1";
+            link.classList.add("hovered-link");
+            });
+            link.addEventListener("mouseleave", () => {
+            mouseCursor.classList.remove("link-grow");
+            mouseCursor.style.zIndex = "1000";
+            link.classList.remove("hovered-link");
+            });
+        });
+    </script> -->
+
+</body>
+
+</html>

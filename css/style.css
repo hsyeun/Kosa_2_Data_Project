@@ -45,16 +45,51 @@ html {
     z-index: 2000;
     /* border: 10px solid red; */
 }
-
+/* amchart */
+#chartdiv, 
+#w-1, #w-2, #w-3, #w-4, 
+#o-1, #o-2, #o-3, #o-4  {
+    width: 100%;
+    height: 500px; 
+  }
+  .sports-chart{
+    width: 100%;
+    margin-top: 100px;
+  }
+  #w-1, #w-2, #w-3, #w-4{
+      padding: 0 50px;
+  }
+  
 .w150{
     width: 150px;
+}
+.w900{
+    width: 900px;
+}
+.m-left-50{
+    margin-left: 50px;
+}
+.m-bot-30{
+    margin-bottom: 30px;
+}
+.fl{
+    float: left;
 }
 
 .text-light-yellow{
     color: #fae6b1 !important;
 }
+.text-light-yellow:hover{
+    color: #ffa101 !important;
+}
 .text-deep-green{
     color: #31525B !important;
+}
+.no-hover:hover{
+    color: #fae6b1 !important;
+}
+.float-left{
+    float: left;
 }
 
 @media (min-width: 1200px) { 
@@ -212,7 +247,7 @@ a.goto-btn:hover {
 }
 .img-wrapper i.fa:hover { background: #ffa101 }
 /* Home Section Style 3 - Slider*/
-#tf-home.slider { background: none }
+#tf-home.slider { background: none;}
 #tf-home.slider .overlay { padding: 0 }
 .carousel-caption {
     position: absolute;
@@ -393,6 +428,18 @@ a.goto-btn { margin-right: 30px }
 .veryperi{
     margin: 20px 0;
     font-size: 40px;
+}
+.line-chart-wrap, .doughnut-chart-wrap{
+    max-width: 730px;
+    /* max-height: 500px; */
+    float: right;
+}
+.line-chart{
+    height: 800px;
+}
+.pie-chart-wrap{
+    max-width: 550px !important;
+    margin: 0 auto;
 }
 /* service lists */
 .service { margin-bottom: 20px }
@@ -619,6 +666,15 @@ ul.social li a.fa:hover { background-color: #333333 }
     border-bottom: 3px solid #cccccc;
     text-transform: uppercase;
     margin-bottom: 5px;
+}
+.ranking-chart {
+    margin-left: -100px;
+    width: 350px;
+}
+.ranking-chart > li > a{
+    margin-bottom: 0 !important;
+    border-bottom: 2px solid #cccccc !important;
+    border-radius: 0 !important;
 }
 .nav.nav-pills > li > a small {
     text-transform: lowercase;
