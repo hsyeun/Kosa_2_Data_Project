@@ -134,6 +134,9 @@ html {
 .pd30{
     padding: 0 47px !important;
 }
+.pd80{
+    padding: 80px 0 !important;
+}
 .fl{
     float: left;
 }
