@@ -27,94 +27,369 @@
                 <h2>Words <span class="highlight"><strong>Ranking</strong></span></h2>
             </div>
 
-            <div class="row">
-                <!-- row -->
-                <div class="text-center">
-                    <ul class="list-inline cat">
-                        <!-- Portfolio Filter Categories -->
-                        <li><a href="#" data-filter="*" class="active">All</a></li>
-                        <li><a href="#" data-filter=".web">Naver</a></li>
-                        <li><a href="#" data-filter=".brand">Youtube</a></li>
-                        <li><a href="#" data-filter=".app">Instargram</a></li>
-                        <li><a href="#" data-filter=".others">Tweeter</a></li>
-                    </ul><!-- End Portfolio Filter Categories -->
-                </div>
-
-                <!-- chart -->
-                <div id="feature float-left">
-                    <!-- fullwidth gray background -->
-                    <div class="container">
-                        <!-- container -->
-                        <div class="row" role="tabpanel">
-                            <!-- row -->
-                            <div class="col-md-4">
-                                <!-- tab menu col 4 -->
-
-                                <ul class="features nav nav-pills nav-stacked ranking-chart" role="tablist">
-                                    <li role="presentation" class="active">
-                                        <!-- feature tab menu #1 -->
-                                        <a href="#f1" aria-controls="f1" role="tab" data-toggle="tab">
-                                        </a>
-                                    </li>
-                                    <li role="presentation">
-                                        <!-- feature tab menu #2 -->
-                                        <a href="#f2" aria-controls="f2" role="tab" data-toggle="tab">
-                                        </a>
-                                    </li>
-                                    <li role="presentation">
-                                        <!-- feature tab menu #3 -->
-                                        <a href="#f3" aria-controls="f3" role="tab" data-toggle="tab">
-                                        </a>
-                                    </li>
-                                    <li role="presentation">
-                                        <!-- feature tab menu #4 -->
-                                        <a href="#f4" aria-controls="f4" role="tab" data-toggle="tab">
-                                        </a>
-                                    </li>
-                                    <li role="presentation">
-                                        <!-- feature tab menu #5 -->
-                                        <a href="#f5" aria-controls="f5" role="tab" data-toggle="tab">
-                                        </a>
-                                    </li>
-                                    <li role="presentation">
-                                        <!-- feature tab menu #5 -->
-                                        <a href="#f5" aria-controls="f5" role="tab" data-toggle="tab">
-                                        </a>
-                                    </li>
-                                    <li role="presentation">
-                                        <!-- feature tab menu #5 -->
-                                        <a href="#f5" aria-controls="f5" role="tab" data-toggle="tab">
-                                        </a>
-                                    </li>
-                                    <li role="presentation">
-                                        <!-- feature tab menu #5 -->
-                                        <a href="#f5" aria-controls="f5" role="tab" data-toggle="tab">
-                                        </a>
-                                    </li>
-                                    <li role="presentation">
-                                        <!-- feature tab menu #5 -->
-                                        <a href="#f5" aria-controls="f5" role="tab" data-toggle="tab">
-                                        </a>
-                                    </li>
-                                    <li role="presentation">
-                                        <!-- feature tab menu #5 -->
-                                        <a href="#f5" aria-controls="f5" role="tab" data-toggle="tab">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div><!-- end tab menu col 4 -->
-
-                            <!-- line chart -->
-                            <div class="line-chart-wrap">
-                                <canvas id="line-chart"></canvas>
-                            </div>
-                        </div> <!-- end row -->
-                    </div> <!-- end container -->
-                </div><!-- end fullwidth gray background -->
-
-            </div><!-- end row -->
-
+            <!-- row -->
+            <div class="text-center">
+                <ul class="list-inline cat dog">
+                    <!-- Portfolio Filter Categories -->
+                    <!-- <li><a href="#" data-filter="*" class="active">All</a></li> -->
+                    <li class="naver"><a href="#" data-filter=".naver">Naver</a></li>
+                    <li class="youtube"><a href="#" data-filter=".youtube">Youtube</a></li>
+                    <li class="instagram"><a href="#" data-filter="instagram">Instargram</a></li>
+                    <li class="facebook"><a href="#" data-filter="facebook">Facebook</a></li>
+                </ul><!-- End Portfolio Filter Categories -->
+            </div>
         </div><!-- end container -->
+
+        <!-- chart -->
+        <div class="container-fluid w100p pd100">
+            <!-- fluid container -->
+            <div id="itemsWork" class="row text-center">
+                <!-- container -->
+                <div class="w900 tab-1 n-1 block" role="tabpanel">
+                    <!-- row -->
+                    <!-- tab menu col 4 -->
+                    <ul class="features nav nav-pills nav-stacked ranking-list w400 fl" role="tablist">
+                        <li role="presentation" class="active">
+                            <!-- feature tab menu #1 -->
+                            <a class="ranking scroll text-uppercase" href="#tf-pricing" aria-controls="f1" role="tab"
+                                data-toggle="tab">
+                                <h4 class="ranking">1. 운동</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #2 -->
+                            <a class="ranking" href="#f2" aria-controls="f2" role="tab" data-toggle="tab">
+                                <h4 class="ranking">2. 공부</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #3 -->
+                            <a class="ranking" href="#f3" aria-controls="f3" role="tab" data-toggle="tab">
+                                <h4 class="ranking">3. 건강</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #4 -->
+                            <a class="ranking" href="#f4" aria-controls="f4" role="tab" data-toggle="tab">
+                                <h4 class="ranking">4. 책</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #5 -->
+                            <a class="ranking" href="#f5" aria-controls="f5" role="tab" data-toggle="tab">
+                                <h4 class="ranking">5. 친구</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #5 -->
+                            <a class="ranking" href="#f5" aria-controls="f5" role="tab" data-toggle="tab">
+                                <h4 class="ranking">6. 행복</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="features nav nav-pills nav-stacked ranking-list w400 fl" role="tablist">
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f7" aria-controls="f7" role="tab" data-toggle="tab">
+                                <h4 class="ranking">7. 다이어트</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f8" aria-controls="f8" role="tab" data-toggle="tab">
+                                <h4 class="ranking">8. 취미</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f9" aria-controls="f9" role="tab" data-toggle="tab">
+                                <h4 class="ranking">9. 걷기</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f10" aria-controls="f10" role="tab" data-toggle="tab">
+                                <h4 class="ranking">9. 기부</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f10" aria-controls="f10" role="tab" data-toggle="tab">
+                                <h4 class="ranking">9. 사랑</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f10" aria-controls="f10" role="tab" data-toggle="tab">
+                                <h4 class="ranking">9. 대선</h4>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- line chart -->
+                </div> <!-- end row -->
+
+                <!-- container -->
+                <div class="w900 tab-1 y-1 none" role="tabpanel">
+                    <!-- row -->
+                    <!-- tab menu col 4 -->
+                    <ul class="features nav nav-pills nav-stacked ranking-list w400 fl" role="tablist">
+                        <li role="presentation" class="active">
+                            <!-- feature tab menu #1 -->
+                            <a class="ranking scroll text-uppercase" href="#tf-pricing" aria-controls="f1" role="tab"
+                                data-toggle="tab">
+                                <h4 class="ranking">1. 건강</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #2 -->
+                            <a class="ranking" href="#f2" aria-controls="f2" role="tab" data-toggle="tab">
+                                <h4 class="ranking">2. 행복</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #3 -->
+                            <a class="ranking" href="#f3" aria-controls="f3" role="tab" data-toggle="tab">
+                                <h4 class="ranking">3. 사랑</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #4 -->
+                            <a class="ranking" href="#f4" aria-controls="f4" role="tab" data-toggle="tab">
+                                <h4 class="ranking">4. 운동</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #5 -->
+                            <a class="ranking" href="#f5" aria-controls="f5" role="tab" data-toggle="tab">
+                                <h4 class="ranking">4. 책</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #5 -->
+                            <a class="ranking" href="#f5" aria-controls="f5" role="tab" data-toggle="tab">
+                                <h4 class="ranking">6. 공부</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="features nav nav-pills nav-stacked ranking-list w400 fl" role="tablist">
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f7" aria-controls="f7" role="tab" data-toggle="tab">
+                                <h4 class="ranking">7. 다이어트</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f8" aria-controls="f8" role="tab" data-toggle="tab">
+                                <h4 class="ranking">8. 걷기</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f9" aria-controls="f9" role="tab" data-toggle="tab">
+                                <h4 class="ranking">8. 기부</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f10" aria-controls="f10" role="tab" data-toggle="tab">
+                                <h4 class="ranking">8. 취미</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f10" aria-controls="f10" role="tab" data-toggle="tab">
+                                <h4 class="ranking">8. 대선</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f10" aria-controls="f10" role="tab" data-toggle="tab">
+                                <h4 class="ranking">8. 친구</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- line chart -->
+                </div> <!-- end row -->
+
+                <!-- container -->
+                <div class="w900 tab-1 i-1 none" role="tabpanel">
+                    <!-- row -->
+                    <!-- tab menu col 4 -->
+                    <ul class="features nav nav-pills nav-stacked ranking-list w400 fl" role="tablist">
+                        <li role="presentation" class="active">
+                            <!-- feature tab menu #1 -->
+                            <a class="ranking scroll text-uppercase" href="#tf-pricing" aria-controls="f1" role="tab"
+                                data-toggle="tab">
+                                <h4 class="ranking">1. 다이어트</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #2 -->
+                            <a class="ranking" href="#f2" aria-controls="f2" role="tab" data-toggle="tab">
+                                <h4 class="ranking">2. 운동</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #3 -->
+                            <a class="ranking" href="#f3" aria-controls="f3" role="tab" data-toggle="tab">
+                                <h4 class="ranking">3. 건강</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #4 -->
+                            <a class="ranking" href="#f4" aria-controls="f4" role="tab" data-toggle="tab">
+                                <h4 class="ranking">4. 걷기</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #5 -->
+                            <a class="ranking" href="#f5" aria-controls="f5" role="tab" data-toggle="tab">
+                                <h4 class="ranking">5. 기부</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #5 -->
+                            <a class="ranking" href="#f5" aria-controls="f5" role="tab" data-toggle="tab">
+                                <h4 class="ranking">6. 공부</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="features nav nav-pills nav-stacked ranking-list w400 fl" role="tablist">
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f7" aria-controls="f7" role="tab" data-toggle="tab">
+                                <h4 class="ranking">7. 책</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f8" aria-controls="f8" role="tab" data-toggle="tab">
+                                <h4 class="ranking">8. 행복</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f9" aria-controls="f9" role="tab" data-toggle="tab">
+                                <h4 class="ranking">9. 사랑</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f10" aria-controls="f10" role="tab" data-toggle="tab">
+                                <h4 class="ranking">10. 취미</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f10" aria-controls="f10" role="tab" data-toggle="tab">
+                                <h4 class="ranking">11. 대선</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f10" aria-controls="f10" role="tab" data-toggle="tab">
+                                <h4 class="ranking">11. 친구</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- line chart -->
+                </div> <!-- end row -->
+
+                <!-- container -->
+                <div class="w900 tab-1 f-1 none" role="tabpanel">
+                    <!-- row -->
+                    <!-- tab menu col 4 -->
+                    <ul class="features nav nav-pills nav-stacked ranking-list w400 fl" role="tablist">
+                        <li role="presentation" class="active">
+                            <!-- feature tab menu #1 -->
+                            <a class="ranking scroll text-uppercase" href="#tf-pricing" aria-controls="f1" role="tab"
+                                data-toggle="tab">
+                                <h4 class="ranking">1. 다이어트</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #2 -->
+                            <a class="ranking" href="#f2" aria-controls="f2" role="tab" data-toggle="tab">
+                                <h4 class="ranking">2. 운동</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #3 -->
+                            <a class="ranking" href="#f3" aria-controls="f3" role="tab" data-toggle="tab">
+                                <h4 class="ranking">3. 행복</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #4 -->
+                            <a class="ranking" href="#f4" aria-controls="f4" role="tab" data-toggle="tab">
+                                <h4 class="ranking">3. 취미</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #5 -->
+                            <a class="ranking" href="#f5" aria-controls="f5" role="tab" data-toggle="tab">
+                                <h4 class="ranking">3. 대선</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #5 -->
+                            <a class="ranking" href="#f5" aria-controls="f5" role="tab" data-toggle="tab">
+                                <h4 class="ranking">6. 공부</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="features nav nav-pills nav-stacked ranking-list w400 fl" role="tablist">
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f7" aria-controls="f7" role="tab" data-toggle="tab">
+                                <h4 class="ranking">6. 사랑</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f8" aria-controls="f8" role="tab" data-toggle="tab">
+                                <h4 class="ranking">6. 친구</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f9" aria-controls="f9" role="tab" data-toggle="tab">
+                                <h4 class="ranking">9. 책</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f10" aria-controls="f10" role="tab" data-toggle="tab">
+                                <h4 class="ranking">10. 건강</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f10" aria-controls="f10" role="tab" data-toggle="tab">
+                                <h4 class="ranking">10. 걷기</h4>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <!-- feature tab menu #7 -->
+                            <a class="ranking" href="#f10" aria-controls="f10" role="tab" data-toggle="tab">
+                                <h4 class="ranking">10. 기부</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- line chart -->
+                </div> <!-- end row -->
+
+            </div><!-- end fullwidth gray background -->
+        </div> <!-- end container -->
+
+            <div class="line-chart-wrap">
+                <canvas id="line-chart"></canvas>
+            </div>
+
+    </div><!-- end row -->
+
     </div>
 
 
@@ -123,14 +398,14 @@
     <div id="tf-intro">
         <div class="container">
             <div class="section-header">
-                <h2>Keywords <strong>Analysis</strong></h2>
+                <!-- <h2>Keywords <strong>Analysis</strong></h2> -->
             </div>
         </div>
     </div>
 
     <!--
     ================================================== -->
-    <div id="tf-blog">
+    <div id="tf-blog" class="none">
         <div class="container">
             <div class="section-header">
                 <h2>Social <span class="highlight"><strong>Networks</strong></span></h2>
@@ -362,79 +637,74 @@
                             </div><!-- end Post Wrapper -->
 
                         </div><!-- end right content col 6 -->
-                    </div><!-- end row -->
-
-                    <!-- <div class="text-center">
-                        <a href="#" class="btn btn-primary tf-btn color">Load More</a>
-                    </div>                 -->
-                </div><!-- end container -->
-            </div> <!-- end fullwidth gray background -->
+                    </div><!-- end container -->
+                </div> <!-- end fullwidth gray background -->
+            </div>
         </div>
     </div>
 
-
-    <!-- Footer 
+        <!-- Footer 
     ================================================== -->
-    <div data-include-path="footer.html"></div>
+        <div data-include-path="footer.html"></div>
 
-    <script>
-        window.addEventListener('load', function () {
-            var allElements = document.getElementsByTagName('*');
-            Array.prototype.forEach.call(allElements, function (el) {
-                var includePath = el.dataset.includePath;
-                if (includePath) {
-                    var xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function () {
-                        if (this.readyState == 4 && this.status == 200) {
-                            el.outerHTML = this.responseText;
-                        }
-                    };
-                    xhttp.open('GET', includePath, true);
-                    xhttp.send();
-                }
+        <script>
+            window.addEventListener('load', function () {
+                var allElements = document.getElementsByTagName('*');
+                Array.prototype.forEach.call(allElements, function (el) {
+                    var includePath = el.dataset.includePath;
+                    if (includePath) {
+                        var xhttp = new XMLHttpRequest();
+                        xhttp.onreadystatechange = function () {
+                            if (this.readyState == 4 && this.status == 200) {
+                                el.outerHTML = this.responseText;
+                            }
+                        };
+                        xhttp.open('GET', includePath, true);
+                        xhttp.send();
+                    }
+                });
             });
-        });
-    </script>
+        </script>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.1.11.1.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.1.11.1.js"></script>
 
-    <script type="text/javascript" src="/js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="/js/modernizr.custom.js"></script>
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="/js/bootstrap.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script type="text/javascript" src="/js/bootstrap.js"></script>
 
-    <script type="text/javascript" src="/js/owl.carousel.js"></script><!-- Owl Carousel Plugin -->
+        <script type="text/javascript" src="/js/owl.carousel.js"></script><!-- Owl Carousel Plugin -->
 
-    <script type="text/javascript" src="/js/SmoothScroll.js"></script>
+        <script type="text/javascript" src="/js/SmoothScroll.js"></script>
 
-    <!-- Charts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-    <script type="text/javascript" src="/js/line-chart.js"></script>
+        <!-- Charts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <script type="text/javascript" src="/js/line-chart.js"></script>
 
-    <!-- Parallax Effects -->
-    <script type="text/javascript" src="/js/skrollr.js"></script>
-    <script type="text/javascript" src="/js/imagesloaded.js"></script>
+        <!-- Parallax Effects -->
+        <script type="text/javascript" src="/js/skrollr.js"></script>
+        <script type="text/javascript" src="/js/imagesloaded.js"></script>
 
-    <!-- Portfolio Filter -->
-    <!-- <script type="text/javascript" src="/js/jquery.isotope.js"></script> -->
+        <!-- Portfolio Filter -->
+        <!-- <script type="text/javascript" src="/js/jquery.isotope.js"></script> -->
 
-    <!-- LightBox Nivo -->
-    <script type="text/javascript" src="/js/nivo-lightbox.min.js"></script>
+        <!-- LightBox Nivo -->
+        <script type="text/javascript" src="/js/nivo-lightbox.min.js"></script>
 
-    <!-- Contact page-->
-    <script type="text/javascript" src="/js/jqBootstrapValidation.js"></script>
-    <script type="text/javascript" src="/js/contact.js"></script>
+        <!-- Contact page-->
+        <script type="text/javascript" src="/js/jqBootstrapValidation.js"></script>
+        <script type="text/javascript" src="/js/contact.js"></script>
 
-    <!-- Javascripts
+        <!-- Javascripts
     ================================================== -->
-    <script type="text/javascript" src="/js/main.js"></script>
+        <script type="text/javascript" src="/js/main.js"></script>
 
 
-    <!-- cursor
+        <!-- cursor
     ================================================== -->
-    <!-- <script>
+        <!-- <script>
         let mouseCursor = document.querySelector(".cursor");
         let navLinks = document.querySelectorAll(".navbar-right li a"); //메뉴 링크
         //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함

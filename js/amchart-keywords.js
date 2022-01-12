@@ -15,9 +15,23 @@ am5.ready(function() {
     children: []
   }
   
-  for (var i = 0; i < 15; i++) {
-    data.children.push({ name: "node " + i, value: Math.random() * 20 + 1 })
-  }
+
+  data.children.push({ name: "2022년", value: 20 })
+  data.children.push({ name: "신년", value: 50 })
+  data.children.push({ name: "계획", value: 70 })
+  data.children.push({ name: "네이버 블로그", value: 10 })
+  data.children.push({ name: "유튜브", value: 50 })
+  data.children.push({ name: "페이스북", value: 30 })
+  data.children.push({ name: "인스타그램", value: 40 })
+  data.children.push({ name: "팬톤 컬러", value: 20 })
+  data.children.push({ name: "FIFA 월드컵", value: 60 })
+  data.children.push({ name: "아시안게임", value: 30 })
+  data.children.push({ name: "베이징 동계올림픽", value: 80 })
+  data.children.push({ name: "VERY PERI", value: 30 })
+  data.children.push({ name: "OTT", value: 50 })
+  data.children.push({ name: "드라마", value: 70 })
+  data.children.push({ name: "영화", value: 60 })
+
   
   // Create wrapper container
   var container = root.container.children.push(
@@ -36,8 +50,8 @@ am5.ready(function() {
       downDepth: 2,
       topDepth: 1,
       initialDepth: 1,
-      maxRadius: 60,
-      minRadius: 20,
+      maxRadius: 80,
+      minRadius: 30,
       valueField: "value",
       categoryField: "name",
       childDataField: "children",

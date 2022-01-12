@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Basic Page Needs
     ================================================== -->
     <div data-include-path="head.html"></div>
-        
-  </head>
-  <body>
-      
-    <div class="cursor"></div>
-    
-    <!-- Main Navigation 
-    ================================================== -->
-    <div data-include-path="nav.html"></div>
-        
 
-    <!-- 2022 Keywords
-    ================================================== -->
-    <div id="tf-home">
-        <!-- <div class="overlay"> -->
-            <div class="container" style="height: 81vh;"> <!-- container -->
+</head>
 
-                <div id="chartdiv"></div>
+<body>
+    <div id="wrap">
+
+        <div class="cursor"></div>
+
+        <!-- Main Navigation 
+    ================================================== -->
+        <div data-include-path="nav.html"></div>
+
+
+        <!-- 2022 Keywords
+    ================================================== -->
+        <div id="tf-home">
+            <!-- <div class="overlay"> -->
+            <div class="container" style="height: 81vh;">
+                <!-- container -->
+
+                <div id="chartdiv" class="h800"></div>
 
             </div> <!-- end container -->
-        <!-- </div> -->
-    </div>
+            <!-- </div> -->
+        </div>
 
-    <!-- Footer 
+        <!-- Footer 
     ================================================== -->
-    <div data-include-path="footer.html"></div>
- 
+        <div data-include-path="footer.html"></div>
+    </div>
     <script>
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             var allElements = document.getElementsByTagName('*');
-            Array.prototype.forEach.call(allElements, function(el) {
+            Array.prototype.forEach.call(allElements, function (el) {
                 var includePath = el.dataset.includePath;
                 if (includePath) {
                     var xhttp = new XMLHttpRequest();
@@ -113,5 +117,6 @@
             });
         }); -->
     </script>
-  </body>
+</body>
+
 </html>

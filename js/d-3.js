@@ -1,4 +1,4 @@
-new Chart(document.getElementById("doughnut-chart"), {
+new Chart(document.getElementById("d-3"), {
   type: 'doughnut',
   data: {
     labels: ["Netflix", "TVN", "Tving", "Wavve", "MBC", "OCN", "SBS"],
