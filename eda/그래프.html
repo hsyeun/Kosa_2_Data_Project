@@ -1,0 +1,25 @@
+import pandas as pd
+import numpy as np
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+%matplotlib inline
+%config InlineBackend.figure_format = 'retina'
+
+plt.rcParams['font.family'] = 'NanumGothic'
+
+df1 = pd.read_csv("월드컵_test.csv", encoding="utf-8-sig")
+
+len(df1)
+df1
+df1.loc[df1["국가"]=="대한민국"]
+
+
+
+sns.swarmplot(x="대륙", y = "횟수", hue="2018 출전", data=df1, s=8)
+plt.annotate("대한민국",xy=(0, df1["횟수"][0]), xytext=(-20, 20),
+    textcoords='offset points', ha='right', va='bottom',
+    bbox=dict(boxstyle='round,pad=0.5', fc='yellow', alpha=0.5),
+    arrowprops=dict(arrowstyle = '->', connectionstyle='arc3,rad=0'))
+plt.show()
