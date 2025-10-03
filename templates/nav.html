@@ -15,10 +15,10 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="newYearPlan.html">신년계획</a></li>
-          <li><a href="ott.html">OTT</a></li>
-          <li><a href="sports.html">스포츠</a></li>
-          <li><a href="pantoneColor.html">올해의 컬러</a></li>
+          <li><a href="{{ url_for('new_year_plan') }}">신년계획</a></li>
+          <li><a href="{{ url_for('ott') }}">OTT</a></li>
+          <li><a href="{{ url_for('sports') }}">스포츠</a></li>
+          <li><a href="{{ url_for('pantone_color') }}">올해의 컬러</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

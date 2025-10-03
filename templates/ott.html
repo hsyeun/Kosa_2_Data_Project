@@ -4,7 +4,7 @@
 <head>
     <!-- Basic Page Needs
     ================================================== -->
-    <div data-include-path="head.html"></div>
+    {% include 'head.html' %}
 
 </head>
 
@@ -14,7 +14,7 @@
 
     <!-- Main Navigation 
     ================================================== -->
-    <div data-include-path="nav.html"></div>
+    {% include 'nav.html' %}
 
     <!--
     ================================================== -->
@@ -41,31 +41,31 @@
                                 <li role="presentation" class="active">
                                     <!-- feature tab menu #1 -->
                                     <a href="#f1" aria-controls="f1" role="tab" data-toggle="tab">
-                                        <img src="/img/logo/netflix.png" alt="" class="w150">
+                                        <img src="/static/img/logo/netflix.png" alt="" class="w150">
                                     </a>
                                 </li>
                                 <li role="presentation">
                                     <!-- feature tab menu #2 -->
                                     <a href="#f2" aria-controls="f2" role="tab" data-toggle="tab">
-                                        <img src="/img/logo/tving.png" alt="" class="w150">
+                                        <img src="/static/img/logo/tving.png" alt="" class="w150">
                                     </a>
                                 </li>
                                 <li role="presentation">
                                     <!-- feature tab menu #3 -->
                                     <a href="#f3" aria-controls="f3" role="tab" data-toggle="tab">
-                                        <img src="/img/logo/wavve.png" alt="" class="w150">
+                                        <img src="/static/img/logo/wavve.png" alt="" class="w150">
                                     </a>
                                 </li>
                                 <li role="presentation">
                                     <!-- feature tab menu #4 -->
                                     <a href="#f4" aria-controls="f4" role="tab" data-toggle="tab">
-                                        <img src="/img/logo/watcha.png" alt="" class="w150">
+                                        <img src="/static/img/logo/watcha.png" alt="" class="w150">
                                     </a>
                                 </li>
                                 <li role="presentation">
                                     <!-- feature tab menu #5 -->
                                     <a href="#f5" aria-controls="f5" role="tab" data-toggle="tab">
-                                        <img src="/img/logo/disney-plus-1.png" alt="" class="w150">
+                                        <img src="/static/img/logo/disney-plus-1.png" alt="" class="w150">
                                     </a>
                                 </li>
                             </ul>
@@ -329,7 +329,7 @@
                         <!-- post wrap -->
                         <div class="media-left">
                             <a href="#">
-                                <img class="media-object w500" src="/img/sum.jpg" alt="...">
+                                <img class="media-object w500" src="/static/img/sum.jpg" alt="...">
                             </a>
                         </div>
                         <div class="media-body">
@@ -358,7 +358,7 @@
 
     <!-- Footer 
     ================================================== -->
-    <div data-include-path="footer.html"></div>
+    {% include 'footer.html' %}
 
     <script>
         window.addEventListener('load', function () {
@@ -381,39 +381,39 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.1.11.1.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.1.11.1.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.js"></script>
 
-    <script type="text/javascript" src="/js/owl.carousel.js"></script><!-- Owl Carousel Plugin -->
+    <script type="text/javascript" src="/static/js/owl.carousel.js"></script><!-- Owl Carousel Plugin -->
 
-    <script type="text/javascript" src="/js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="/static/js/SmoothScroll.js"></script>
 
     <!-- Charts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-    <script type="text/javascript" src="/js/d-1.js"></script>
-    <script type="text/javascript" src="/js/d-2.js"></script>
-    <script type="text/javascript" src="/js/d-3.js"></script>
+    <script type="text/javascript" src="/static/js/d-1.js"></script>
+    <script type="text/javascript" src="/static/js/d-2.js"></script>
+    <script type="text/javascript" src="/static/js/d-3.js"></script>
 
     <!-- Parallax Effects -->
-    <script type="text/javascript" src="/js/skrollr.js"></script>
-    <script type="text/javascript" src="/js/imagesloaded.js"></script>
+    <script type="text/javascript" src="/static/js/skrollr.js"></script>
+    <script type="text/javascript" src="/static/js/imagesloaded.js"></script>
 
     <!-- Portfolio Filter -->
-    <script type="text/javascript" src="/js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.isotope.js"></script>
 
     <!-- LightBox Nivo -->
-    <script type="text/javascript" src="/js/nivo-lightbox.min.js"></script>
+    <script type="text/javascript" src="/static/js/nivo-lightbox.min.js"></script>
 
     <!-- Contact page-->
-    <script type="text/javascript" src="/js/jqBootstrapValidation.js"></script>
-    <script type="text/javascript" src="/js/contact.js"></script>
+    <script type="text/javascript" src="/static/js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="/static/js/contact.js"></script>
 
     <!-- Javascripts
     ================================================== -->
-    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/static/js/main.js"></script>
 
-    <script type="text/javascript" src="/js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="/static/js/modernizr.custom.js"></script>
 
     <!-- cursor
     ================================================== -->

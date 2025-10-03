@@ -4,7 +4,7 @@
 <head>
     <!-- Basic Page Needs
     ================================================== -->
-    <div data-include-path="head.html"></div>
+    {% include 'head.html' %}
 
 </head>
 
@@ -14,7 +14,7 @@
 
     <!-- Main Navigation 
     ================================================== -->
-    <div data-include-path="nav.html"></div>
+    {% include 'nav.html' %}
 
     <p class="button-up"><a href="#tf-home" class="scroll">▲</a></p>
 
@@ -34,7 +34,7 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="/img/bg/slide1.jpg" alt="...">
+                        <img src="/static/img/bg/slide1.jpg" alt="...">
                         <div class="carousel-caption">
                             <div class="content-heading text-center">
                                 <!-- Input Your Home Content Here -->
@@ -47,7 +47,7 @@
                     </div>
 
                     <div class="item">
-                        <img src="/img/bg/slide2.jpg" alt="...">
+                        <img src="/static/img/bg/slide2.jpg" alt="...">
                         <div class="carousel-caption">
                             <div class="content-heading text-center">
                                 <!-- Input Your Home Content Here -->
@@ -60,7 +60,7 @@
                     </div>
 
                     <div class="item">
-                        <img src="/img/bg/slide3.jpg" alt="...">
+                        <img src="/static/img/bg/slide3.jpg" alt="...">
                         <div class="carousel-caption">
                             <div class="content-heading text-center">
                                 <!-- Input Your Home Content Here -->
@@ -103,7 +103,7 @@
                 <div class="sports-chart">
                     <h3 class="text-center text-bold">대한민국의 종목별 참가선수 - 메달 합계 버블차트</h3>
                     <!-- <div id="o-3"></div> -->
-                    <img src="/img/o-3.png" class="w800 m-left-100" alt="">
+                    <img src="/static/img/o-3.png" class="w800 m-left-100" alt="">
                 </div>
     
                 <div class="sports-chart">
@@ -230,7 +230,7 @@
 
             <div class="sports-chart">
                 <h3 class="text-center text-bold"> 2018년 월드컵 순위 분포</h3>
-                <img src="/img/w-3.png" class="w900 m-left-50" alt="">
+                <img src="/static/img/w-3.png" class="w900 m-left-50" alt="">
             </div>
 
             <div class="sports-chart">
@@ -244,7 +244,7 @@
 
     <!-- Footer 
     ================================================== -->
-    <div data-include-path="footer.html"></div>
+    {% include 'footer.html' %}
 
     <!-- <div data-include-path="script.html"></div> -->
     <script>
@@ -268,50 +268,50 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.1.11.1.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.1.11.1.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.js"></script>
 
-    <script type="text/javascript" src="/js/owl.carousel.js"></script><!-- Owl Carousel Plugin -->
+    <script type="text/javascript" src="/static/js/owl.carousel.js"></script><!-- Owl Carousel Plugin -->
 
-    <script type="text/javascript" src="/js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="/static/js/SmoothScroll.js"></script>
 
     <!-- Charts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     
-    <script type="text/javascript" src="/js/core.js"></script>
-    <script type="text/javascript" src="/js/charts.js"></script>
-    <script type="text/javascript" src="/js/animated.js"></script>
+    <script type="text/javascript" src="/static/js/core.js"></script>
+    <script type="text/javascript" src="/static/js/charts.js"></script>
+    <script type="text/javascript" src="/static/js/animated.js"></script>
 
-    <script type="text/javascript" src="/js/pie-chart.js"></script>
-    <script type="text/javascript" src="/js/w-1.js"></script>
-    <script type="text/javascript" src="/js/w-2.js"></script>
+    <script type="text/javascript" src="/static/js/pie-chart.js"></script>
+    <script type="text/javascript" src="/static/js/w-1.js"></script>
+    <script type="text/javascript" src="/static/js/w-2.js"></script>
     <!-- <script type="text/javascript" src="/js/w-3.js"></script> -->
-    <script type="text/javascript" src="/js/w-4.js"></script>
-    <script type="text/javascript" src="/js/o-1.js"></script>
-    <script type="text/javascript" src="/js/o-2.js"></script>
-    <script type="text/javascript" src="/js/o-3.js"></script>
-    <script type="text/javascript" src="/js/o-4.js"></script>
+    <script type="text/javascript" src="/static/js/w-4.js"></script>
+    <script type="text/javascript" src="/static/js/o-1.js"></script>
+    <script type="text/javascript" src="/static/js/o-2.js"></script>
+    <script type="text/javascript" src="/static/js/o-3.js"></script>
+    <script type="text/javascript" src="/static/js/o-4.js"></script>
 
     <!-- Parallax Effects -->
-    <script type="text/javascript" src="/js/skrollr.js"></script>
-    <script type="text/javascript" src="/js/imagesloaded.js"></script>
+    <script type="text/javascript" src="/static/js/skrollr.js"></script>
+    <script type="text/javascript" src="/static/js/imagesloaded.js"></script>
 
     <!-- Portfolio Filter -->
     <!-- <script type="text/javascript" src="/js/jquery.isotope.js"></script> -->
 
     <!-- LightBox Nivo -->
-    <script type="text/javascript" src="/js/nivo-lightbox.min.js"></script>
+    <script type="text/javascript" src="/static/js/nivo-lightbox.min.js"></script>
 
     <!-- Contact page-->
-    <script type="text/javascript" src="/js/jqBootstrapValidation.js"></script>
-    <script type="text/javascript" src="/js/contact.js"></script>
+    <script type="text/javascript" src="/static/js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="/static/js/contact.js"></script>
 
     <!-- Javascripts
     ================================================== -->
-    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/static/js/main.js"></script>
 
-    <script type="text/javascript" src="/js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="/static/js/modernizr.custom.js"></script>
 
 
 
